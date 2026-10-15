@@ -216,3 +216,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# EBB plate bitmap previews (regenerate with ebb_plate_render.py)
+plate_preview*.png
