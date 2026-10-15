@@ -1,0 +1,124 @@
+{
+  "generated_utc": "2026-10-15T04:46:19+00:00",
+  "ebb_root": "/home/chris/Documents/dev/ebb/Claude/cb.ebb.claude.data",
+  "series": {
+    "co2": {
+      "title": "NOAA GML Mauna Loa monthly mean CO2 (co2_mm_mlo.csv)",
+      "units": "ppm",
+      "origin": "local file (not an EBB source)",
+      "file": "raw/co2_mlo.csv",
+      "sha256": "d895fb5b4a59fb5e4cd98e69b7667fe5bef595c6581f630852b12cb41c07f675",
+      "records": 823,
+      "with_uncertainty": 629,
+      "first_t": 1958.208,
+      "last_t": 2026.708
+    },
+    "temp_anomaly": {
+      "title": "NOAA NCEI Climate at a Glance global land+ocean temperature anomaly",
+      "units": "degC vs 1901-2000",
+      "ebb_indicator": "temp.anomaly.global.land_ocean.monthly",
+      "ebb_source_ids": [
+        "noaa_temp_global_monthly"
+      ],
+      "records": 2121,
+      "with_uncertainty": 0,
+      "first_t": 1850.042,
+      "last_t": 2026.708,
+      "raw_covers_to_t": null,
+      "raw_files": {
+        "noaa_temp_global_monthly": {
+          "path": "data/raw/noaa_temp_global_monthly/2026-10-14/20261014T090001Z.json",
+          "sha256": "c2a5be319ffded838fa6762c85a112a19dbca9841c71b42e2afeb31aee3d48ad"
+        }
+      }
+    },
+    "sea_level_recon": {
+      "title": "CSIRO reconstructed GMSL (Church & White 2011)",
+      "units": "mm",
+      "origin": "local file (not an EBB source)",
+      "file": "raw/gmsl_recon.csv",
+      "sha256": "96cfa11e9cebb6bac246db2e23f98e42b01658f97200f025a270b9fe3cd250b3",
+      "records": 1608,
+      "with_uncertainty": 1608,
+      "first_t": 1880.042,
+      "last_t": 2013.958
+    },
+    "sea_level_sat": {
+      "title": "AVISO merged multi-mission satellite altimetry GMSL (GIA-adjusted, NRT)",
+      "units": "mm (aligned to recon)",
+      "ebb_indicator": "sea_level.global.weekly",
+      "ebb_source_ids": [
+        "aviso_gmsl_merged_nrt"
+      ],
+      "records": 1239,
+      "with_uncertainty": 1234,
+      "first_t": 1993.011,
+      "last_t": 2026.729,
+      "raw_covers_to_t": 2026.567,
+      "raw_files": {
+        "aviso_gmsl_merged_nrt": {
+          "path": "data/raw/aviso_gmsl_merged_nrt/snapshots/2026-08-06.txt",
+          "sha256": "c1b682fd6d3ee66fbacaa62051a0e3173fa876c589ae2cadfc329359be31de7c"
+        }
+      }
+    },
+    "ocean_heat_0_700m": {
+      "title": "NOAA NCEI WOA22 World Ocean heat content 0-700 m, 3-month means",
+      "units": "1e22 J",
+      "ebb_indicator": "ohc.0_700m.global.quarterly",
+      "ebb_source_ids": [
+        "noaa_ohc_700m_10_12_quarterly",
+        "noaa_ohc_700m_1_3_quarterly",
+        "noaa_ohc_700m_4_6_quarterly",
+        "noaa_ohc_700m_7_9_quarterly"
+      ],
+      "records": 286,
+      "with_uncertainty": 285,
+      "first_t": 1955.123,
+      "last_t": 2026.373,
+      "raw_covers_to_t": 2026.125,
+      "raw_files": {
+        "noaa_ohc_700m_10_12_quarterly": {
+          "path": "data/raw/noaa_ohc_700m_10_12_quarterly/snapshots/2026-08-01.txt",
+          "sha256": "ee9c67d188a707f0278d519410b1fe1b1a67ffac58738c16b283e5643d8cca30"
+        },
+        "noaa_ohc_700m_1_3_quarterly": {
+          "path": "data/raw/noaa_ohc_700m_1_3_quarterly/snapshots/2026-08-01.txt",
+          "sha256": "7c375991d3f4d3687699e31a768cbeaae8e3491b2e926fa9326a1337938d2966"
+        },
+        "noaa_ohc_700m_4_6_quarterly": {
+          "path": "data/raw/noaa_ohc_700m_4_6_quarterly/snapshots/2026-08-01.txt",
+          "sha256": "4c1b8ba76850f2d19d2470691fbf50b13eb9d612062c626077e5e9404b68ff54"
+        },
+        "noaa_ohc_700m_7_9_quarterly": {
+          "path": "data/raw/noaa_ohc_700m_7_9_quarterly/snapshots/2026-08-01.txt",
+          "sha256": "33291f87a9b2908f2876e4e6ebd72ce5ca85b5c61ade1152fb034e1d639df477"
+        }
+      }
+    }
+  },
+  "sea_level_splice": {
+    "offset_mm_added_to_sat": 2.037,
+    "overlap_years": [
+      1994,
+      1995,
+      1996,
+      1997,
+      1998,
+      1999,
+      2000,
+      2001,
+      2002,
+      2003,
+      2004,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012
+    ]
+  }
+}
