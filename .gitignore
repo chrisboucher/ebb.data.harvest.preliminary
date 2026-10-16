@@ -219,3 +219,4 @@ __marimo__/
 
 # EBB plate bitmap previews (regenerate with ebb_plate_render.py)
 plate_preview*.png
+plate_coupon*.svg
